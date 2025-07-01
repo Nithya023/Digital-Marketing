@@ -1,137 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PPB3B84V');</script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Marketing Agency - Contact Us</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #F9FAFB; /* Soft Gray Background */
-            color: #1E293B; /* Slate Text */
-        }
-        .form-input {
-            width: 100%;
-            padding: 0.75rem 1rem;
-            border: 1px solid #d1d5db; /* Gray-300 */
-            border-radius: 0.5rem; /* Rounded-lg */
-            font-size: 1rem;
-            line-height: 1.5;
-            color: #1f2937; /* Gray-900 */
-            background-color: #ffffff;
-            transition: border-color 0.3s ease, box-shadow 0.3s ease;
-        }
-        .form-input:focus {
-            outline: none;
-            border-color: #38BDF8; /* Sky Blue */
-            box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2); /* Sky Blue with opacity */
-        }
-        .btn-submit {
-            background-color: #0F172A; /* Midnight Blue */
-            transition: background-color 0.3s ease;
-        }
-        .btn-submit:hover {
-            background-color: #1a2b4d; /* Darker Midnight Blue for hover */
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Light gray background */
+        }
+    </style>
 </head>
-<body class="text-[#1E293B]">
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPB3B84V"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <nav class="bg-white shadow-md py-4">
-        <div class="container mx-auto px-4 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-[#0F172A] rounded-lg p-2">Digital Agency</a>
-            <div class="space-x-6">
-                <a href="index.html" class="text-[#1E293B] hover:text-[#38BDF8] font-medium transition duration-300 rounded-lg p-2">Home</a>
-                <a href="services.html" class="text-[#1E293B] hover:text-[#38BDF8] font-medium transition duration-300 rounded-lg p-2">Services</a>
-                <a href="contact.html" class="text-[#38BDF8] font-medium transition duration-300 rounded-lg p-2">Contact</a>
-            </div>
-        </div>
-    </nav>
+<body class="flex items-center justify-center min-h-screen p-4">
+    <div class="bg-white p-8 rounded-lg shadow-xl w-full max-w-md border border-gray-200">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Contact Us</h2>
 
-        <header class="bg-[#0F172A] text-white py-20 px-4 rounded-b-lg shadow-lg">
-        <div class="container mx-auto text-center">
-            <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6">
-                Get In Touch With Us
-            </h1>
-            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-90">
-                We'd love to hear from you! Fill out the form below or reach us directly.
-            </p>
-        </div>
-    </header>
+        <!-- The form will submit to thankyou.html -->
+        <form action="thankyou.html" method="GET" class="space-y-6">
+            <!-- Name Field -->
+            <div>
+                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                <input type="text" id="name" name="name" required
+                       class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-700 focus:border-blue-700 sm:text-sm transition duration-150 ease-in-out">
+            </div>
 
-        <section class="py-16 px-4">
-        <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            <!-- Email Field -->
+            <div>
+                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                <input type="email" id="email" name="email" required
+                       class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-700 focus:border-blue-700 sm:text-sm transition duration-150 ease-in-out">
+            </div>
 
-                        <div class="bg-white rounded-xl p-8 shadow-lg">
-                <h2 class="text-3xl font-bold text-[#1E293B] mb-8 text-center">Send Us a Message</h2>
-                <form action="thankyou.html" method="GET" class="space-y-6" onsubmit="event.preventDefault(); window.location.href='thankyou.html';">
-                    <div>
-                        <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Your Name</label>
-                        <input type="text" id="name" name="name" class="form-input" placeholder="John Doe" required>
-                    </div>
-                    <div>
-                        <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Your Email</label>
-                        <input type="email" id="email" name="email" class="form-input" placeholder="john.doe@example.com" required>
-                    </div>
-                    <div>
-                        <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Phone Number (Optional)</label>
-                        <input type="tel" id="phone" name="phone" class="form-input" placeholder="+1 (555) 123-4567">
-                    </div>
-                    <div>
-                        <label for="course" class="block text-sm font-medium text-gray-700 mb-2">Course Interested In</label>
-                        <input type="text" id="course" name="course" class="form-input" placeholder="e.g., SEO, Social Media, Content Marketing">
-                    </div>
-                    <div>
-                        <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Your Message</label>
-                        <textarea id="message" name="message" rows="5" class="form-input" placeholder="Tell us about your project or question..." required></textarea>
-                    </div>
-                    <button type="submit" class="btn-submit w-full py-3 text-lg font-semibold text-white rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:scale-105">
-                        Send Message
-                    </button>
-                </form>
-            </div>
+            <!-- Address Field -->
+            <div>
+                <label for="address" class="block text-sm font-medium text-gray-700 mb-1">Address</label>
+                <textarea id="address" name="address" rows="3"
+                          class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-700 focus:border-blue-700 sm:text-sm transition duration-150 ease-in-out"></textarea>
+            </div>
 
-                        <div class="bg-white rounded-xl p-8 shadow-lg">
-                <h2 class="text-3xl font-bold text-[#1E293B] mb-8 text-center">Contact Information</h2>
-                <div class="space-y-6 text-lg text-gray-700">
-                    <div class="flex items-center space-x-4">
-                        <svg class="w-6 h-6 text-[#38BDF8]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-5 13h1a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 00-2-2H5a2 2 0 00-2 2z"></path></svg>
-                        <span>Email: <a href="mailto:info@digitalagency.com" class="text-[#38BDF8] hover:underline">info@digitalagency.com</a></span>
-                    </div>
-                    <div class="flex items-center space-x-4">
-                        <svg class="w-6 h-6 text-[#38BDF8]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
-                        <span>Phone: <a href="tel:+1234567890" class="text-[#38BDF8] hover:underline">+1 (234) 567-890</a></span>
-                    </div>
-                    <div class="flex items-center space-x-4">
-                        <svg class="w-6 h-6 text-[#38BDF8]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                        <span>Address: 123 Digital Blvd, Suite 400, Marketing City, MA 12345</span>
-                    </div>
-                    <div class="flex items-center space-x-4">
-                        <svg class="w-6 h-6 text-[#38BDF8]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-                        <span>Business Hours: Mon - Fri: 9:00 AM - 5:00 PM (EST)</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+            <!-- Phone Number Field -->
+            <div>
+                <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                <input type="tel" id="phone" name="phone"
+                       class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-700 focus:border-blue-700 sm:text-sm transition duration-150 ease-in-out">
+            </div>
 
-        <footer class="bg-[#0F172A] text-white py-8 px-4">
-        <div class="container mx-auto text-center">
-            <p>&copy; 2025 Digital Agency. All rights reserved.</p>
-            <div class="mt-4 space-x-4">
-                <a href="#" class="text-gray-300 hover:text-white transition duration-300">Privacy Policy</a>
-                <a href="#" class="text-gray-300 hover:text-white transition duration-300">Terms of Service</a>
-            </div>
-        </div>
-    </footer>
+            <!-- Course Field (Dropdown) -->
+            <div>
+                <label for="course" class="block text-sm font-medium text-gray-700 mb-1">Course of Interest</label>
+                <select id="course" name="course"
+                        class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-700 focus:border-blue-700 sm:text-sm transition duration-150 ease-in-out">
+                    <option value="">-- Select a Course --</option>
+                    <option value="seo">Search Engine Optimization (SEO)</option>
+                    <option value="smm">Social Media Marketing (SMM)</option>
+                    <option value="content_marketing">Content Marketing</option>
+                    <option value="ppc_advertising">Pay-Per-Click (PPC) Advertising</option>
+                    <option value="web_design_development">Web Design & Development</option>
+                    <option value="email_marketing">Email Marketing</option>
+                </select>
+            </div>
 
+            <!-- Comments Field -->
+            <div>
+                <label for="comments" class="block text-sm font-medium text-gray-700 mb-1">Comments</label>
+                <textarea id="comments" name="comments" rows="4"
+                          class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-700 focus:border-blue-700 sm:text-sm transition duration-150 ease-in-out"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div>
+                <button type="submit"
+                        class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-lg font-medium text-white bg-blue-800 hover:bg-blue-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-700 transition duration-150 ease-in-out">
+                    SUBMIT
+                </button>
+            </div>
+        </form>
+    </div>
 </body>
 </html>

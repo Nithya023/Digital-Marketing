@@ -21,6 +21,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             background-color: #F9FAFB; /* Soft Gray Background */
             color: #1E293B; /* Slate Text */
         }
+        /* service-card is now an <a> tag, so style it like one */
         .service-card {
             background-color: #ffffff;
             border-radius: 12px;
@@ -28,6 +29,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             cursor: pointer; /* Indicate clickable element */
+            display: block; /* Make the anchor tag behave like a block for layout */
+            text-decoration: none; /* Remove underline from link */
+            color: inherit; /* Inherit text color from parent body */
         }
         .service-card:hover {
             transform: translateY(-5px);
@@ -80,64 +84,64 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
                 <!-- Service Card 1: Search Engine Optimization (SEO) -->
-                <!-- Added onclick to navigate to contact.html -->
-                <div class="service-card text-center" onclick="window.location.href='contact.html'">
+                <!-- Changed to <a> tag and added cta-contact class -->
+                <a href="contact.html" class="service-card text-center cta-contact">
                     <div class="icon-bg mx-auto">
                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
                     </div>
                     <h3 class="text-2xl font-semibold text-[#1E293B] mb-3">Search Engine Optimization (SEO)</h3>
                     <p class="text-gray-600">Improve your website's organic search rankings, drive more traffic, and increase online visibility with our comprehensive SEO strategies, including keyword research, on-page optimization, link building, and technical SEO audits.</p>
-                </div>
+                </a>
 
                 <!-- Service Card 2: Social Media Marketing (SMM) -->
-                <!-- Added onclick to navigate to contact.html -->
-                <div class="service-card text-center" onclick="window.location.href='contact.html'">
+                <!-- Changed to <a> tag and added cta-contact class -->
+                <a href="contact.html" class="service-card text-center cta-contact">
                     <div class="icon-bg mx-auto" style="background-color: #f3e8ff; color: #9333EA;"> <!-- Light Violet for icon background, Violet for icon -->
                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H2v-2a4 4 0 014-4h2a4 4 0 014 4v2m3-10a6 6 0 11-12 0 6 6 0 0112 0zm-9 0a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                     </div>
                     <h3 class="text-2xl font-semibold text-[#1E293B] mb-3">Social Media Marketing (SMM)</h3>
                     <p class="text-gray-600">Build a strong brand community and drive engagement across platforms like Facebook, Instagram, Twitter, and LinkedIn. Our SMM services include content creation, community management, and paid social campaigns.</p>
-                </div>
+                </a>
 
                 <!-- Service Card 3: Content Marketing -->
-                <!-- Added onclick to navigate to contact.html -->
-                <div class="service-card text-center" onclick="window.location.href='contact.html'">
+                <!-- Changed to <a> tag and added cta-contact class -->
+                <a href="contact.html" class="service-card text-center cta-contact">
                     <div class="icon-bg mx-auto">
                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
                     </div>
                     <h3 class="text-2xl font-semibold text-[#1E293B] mb-3">Content Marketing</h3>
                     <p class="text-gray-600">Attract and retain a clearly defined audience by creating and distributing valuable, relevant, and consistent content. This includes blog posts, articles, videos, infographics, and more.</p>
-                </div>
+                </a>
 
                 <!-- Service Card 4: Pay-Per-Click (PPC) Advertising -->
-                <!-- Added onclick to navigate to contact.html -->
-                <div class="service-card text-center" onclick="window.location.href='contact.html'">
+                <!-- Changed to <a> tag and added cta-contact class -->
+                <a href="contact.html" class="service-card text-center cta-contact">
                     <div class="icon-bg mx-auto">
                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8L11 2m7 16l-4-4m4 4H6a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v10a2 2 0 01-2 2z"></path></svg>
                     </div>
                     <h3 class="text-2xl font-semibold text-[#1E293B] mb-3">Pay-Per-Click (PPC) Advertising</h3>
                     <p class="text-gray-600">Get immediate visibility and targeted traffic with our expertly managed PPC campaigns on Google Ads and social media platforms. We focus on maximizing your ROI and minimizing ad spend.</p>
-                </div>
+                </a>
 
                 <!-- Service Card 5: Web Design & Development -->
-                <!-- Added onclick to navigate to contact.html -->
-                <div class="service-card text-center" onclick="window.location.href='contact.html'">
+                <!-- Changed to <a> tag and added cta-contact class -->
+                <a href="contact.html" class="service-card text-center cta-contact">
                     <div class="icon-bg mx-auto">
                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
                     </div>
                     <h3 class="text-2xl font-semibold text-[#1E293B] mb-3">Web Design & Development</h3>
                     <p class="text-gray-600">Create stunning, user-friendly, and responsive websites that serve as the foundation of your digital presence. We build sites optimized for performance, SEO, and conversion.</p>
-                </div>
+                </a>
 
                 <!-- Service Card 6: Email Marketing -->
-                <!-- Added onclick to navigate to contact.html -->
-                <div class="service-card text-center" onclick="window.location.href='contact.html'">
+                <!-- Changed to <a> tag and added cta-contact class -->
+                <a href="contact.html" class="service-card text-center cta-contact">
                     <div class="icon-bg mx-auto">
                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                     </div>
                     <h3 class="text-2xl font-semibold text-[#1E293B] mb-3">Email Marketing</h3>
                     <p class="text-gray-600">Nurture leads, engage customers, and drive sales with highly effective email marketing campaigns. We handle everything from list segmentation to compelling email design and automation.</p>
-                </div>
+                </a>
 
             </div>
         </div>
@@ -150,7 +154,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <p class="text-xl mb-8 max-w-3xl mx-auto opacity-90">
                 Contact us today to discuss your specific needs and how we can help your business grow.
             </p>
-            <a href="contact.html" class="inline-block px-8 py-4 text-lg font-semibold bg-[#0F172A] text-white rounded-full shadow-lg hover:bg-[#1a2b4d] transition duration-300 transform hover:scale-105">
+            <!-- Added cta-contact class to this link -->
+            <a href="contact.html" class="inline-block px-8 py-4 text-lg font-semibold bg-[#0F172A] text-white rounded-full shadow-lg hover:bg-[#1a2b4d] transition duration-300 transform hover:scale-105 cta-contact">
                 Get a Free Consultation
             </a>
         </div>

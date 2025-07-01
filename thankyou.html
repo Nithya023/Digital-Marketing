@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You!</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F9FAFB; /* Soft Gray Background */
+            color: #1E293B; /* Slate Text */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 3rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            max-width: 600px;
+            width: 90%;
+        }
+        .btn-home {
+            background-color: #0F172A; /* Midnight Blue (Navy Blue) */
+            transition: background-color 0.3s ease;
+        }
+        .btn-home:hover {
+            background-color: #1a2b4d; /* Darker Midnight Blue for hover */
+        }
+    </style>
+</head>
+<body class="text-[#1E293B]">
+
+    <div class="container">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-[#0F172A] mb-6">
+            Thank You!
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-700 mb-8">
+            Thank you for contacting us. Our team will get back to you soon!
+        </p>
+        <a href="index.html" class="btn-home inline-block px-8 py-4 text-lg font-semibold text-white rounded-full shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-105">
+            Return to Home
+        </a>
+    </div>
+
+</body>
+</html>

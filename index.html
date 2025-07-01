@@ -3,132 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Company - Digital Marketing Solutions</title>
+    <title>Digital Marketing Agency - Home</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #FFFFFF; /* Background: White */
-            color: #222222; /* Text: Charcoal */
+            font-family: 'Inter', sans-serif;
+            background-color: #F9FAFB; /* Soft Gray Background */
+            color: #1E293B; /* Slate Text */
         }
-        .container { width: 80%; margin: auto; overflow: hidden; padding: 20px 0; }
-        header {
-            background: #D8BFD8; /* Primary: Light Lavender */
-            color: #5A189A; /* Deep Purple for contrast on header */
-            padding: 1rem 0;
-            text-align: center;
+        /* Custom styles for gradients and shadows */
+        .hero-gradient {
+            background: linear-gradient(to right, #0F172A, #38BDF8); /* Midnight Blue to Sky Blue */
         }
-        header h1 { margin: 0; }
-        .hero {
-            background: #FFFFFF; /* Background: White */
-            padding: 4rem 0;
-            text-align: center;
+        .btn-primary {
+            background-color: #0F172A; /* Midnight Blue */
+            transition: background-color 0.3s ease;
         }
-        .hero h2 { color: #5A189A; /* Deep Purple for headlines */ margin-bottom: 20px; }
-        .hero .cta-button {
-            background: #B19CD9; /* Accent: Light Purple */
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
+        .btn-primary:hover {
+            background-color: #1a2b4d; /* Darker Midnight Blue for hover */
         }
-        .about-us, .services-highlight, .testimonials, .lead-capture { padding: 2rem 0; text-align: center; }
-        .about-us h2, .services-highlight h2, .testimonials h2, .lead-capture h2 { color: #5A189A; /* Deep Purple for headlines */ margin-bottom: 30px; }
-        .service-item { display: inline-block; width: 30%; margin: 0 1.5%; vertical-align: top; }
-        .service-item h3 { color: #B19CD9; /* Accent: Light Purple */ }
-        .testimonial-item {
-            background: #F0F0F0; /* Slightly off-white for contrast */
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-            color: #222222; /* Text: Charcoal */
-        }
-        .lead-capture .cta-button {
-            background: #B19CD9; /* Accent: Light Purple */
-            color: #fff;
-            padding: 12px 25px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.1em;
-        }
-        footer {
-            background: #D8BFD8; /* Primary: Light Lavender */
-            color: #5A189A; /* Deep Purple for text on footer */
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: 30px;
+        .card-shadow {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
         }
     </style>
 </head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Your Company Name</h1>
+<body class="text-[#1E293B]">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-md py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-[#0F172A] rounded-lg p-2">Digital Agency</a>
+            <div class="space-x-6">
+                <a href="index.html" class="text-[#1E293B] hover:text-[#38BDF8] font-medium transition duration-300 rounded-lg p-2">Home</a>
+                <a href="services.html" class="text-[#1E293B] hover:text-[#38BDF8] font-medium transition duration-300 rounded-lg p-2">Services</a>
+                <a href="contact.html" class="text-[#1E293B] hover:text-[#38BDF8] font-medium transition duration-300 rounded-lg p-2">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-gradient text-white py-20 px-4 rounded-b-lg shadow-lg">
+        <div class="container mx-auto text-center">
+            <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6 animate-fade-in-down">
+                Ignite Your Brand's Digital Presence
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-90 animate-fade-in-up">
+                We craft cutting-edge digital strategies to drive growth, engagement, and measurable results for your business.
+            </p>
+            <a href="services.html" class="btn-primary inline-block px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-105">
+                Explore Our Services
+            </a>
         </div>
     </header>
 
-    <section class="hero">
-        <div class="container">
-            <h2>Unlock Your Business Potential with Expert Digital Marketing!</h2>
-            <p>We help businesses like yours thrive online through strategic digital solutions.</p>
-            <a href="#lead-capture-section" class="cta-button">Get a Free Consultation!</a>
+    <!-- About Us Section -->
+    <section class="py-16 px-4">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-[#1E293B] mb-6">Who We Are</h2>
+            <p class="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                At Digital Agency, we are a team of passionate digital marketing experts dedicated to helping businesses thrive in the online world. With years of experience and a deep understanding of the latest trends, we deliver tailored solutions that meet your unique goals and exceed expectations. We believe in transparency, innovation, and measurable success.
+            </p>
         </div>
     </section>
 
-    <section class="about-us">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>Welcome to Your Company Name! We are a dedicated team of digital marketing professionals passionate about helping businesses achieve their online goals. With years of experience and a deep understanding of the digital landscape, we craft tailored strategies that deliver measurable results.</p>
-            <p>Our commitment is to transparency, innovation, and client success. We believe in building long-term partnerships and empowering our clients with effective digital solutions.</p>
-        </div>
-    </section>
+    <!-- Core Offerings Section -->
+    <section class="bg-gray-50 py-16 px-4">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-[#1E293B] text-center mb-12">Our Core Strengths</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1: SEO -->
+                <div class="bg-white rounded-xl p-8 card-shadow hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-[#38BDF8] mb-4"> <!-- Sky Blue for icon -->
+                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-[#1E293B] mb-3 text-center">Search Engine Optimization (SEO)</h3>
+                    <p class="text-gray-600 text-center">Boost your visibility and rank higher on search engines with our expert SEO strategies.</p>
+                </div>
 
-    <section class="services-highlight">
-        <div class="container">
-            <h2>Our Main Services</h2>
-            <div class="service-item">
-                <h3>Search Engine Optimization (SEO)</h3>
-                <p>Improve your visibility and rank higher on search engines to attract more organic traffic.</p>
-            </div>
-            <div class="service-item">
-                <h3>Google Ads Management</h3>
-                <p>Run highly targeted pay-per-click campaigns that drive immediate leads and sales.</p>
-            </div>
-            <div class="service-item">
-                <h3>Social Media Marketing</h3>
-                <p>Build your brand, engage your audience, and grow your community on popular social platforms.</p>
-            </div>
-        </div>
-    </section>
+                <!-- Card 2: Social Media Marketing -->
+                <div class="bg-white rounded-xl p-8 card-shadow hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-[#9333EA] mb-4"> <!-- Violet for icon -->
+                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H2v-2a4 4 0 014-4h2a4 4 0 014 4v2m3-10a6 6 0 11-12 0 6 6 0 0112 0zm-9 0a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-[#1E293B] mb-3 text-center">Social Media Marketing (SMM)</h3>
+                    <p class="text-gray-600 text-center">Engage your audience and build a strong brand presence across all social platforms.</p>
+                </div>
 
-    <section class="testimonials">
-        <div class="container">
-            <h2>What Our Clients Say</h2>
-            <div class="testimonial-item">
-                <p>"Your Company Name transformed our online presence! Their SEO strategies significantly increased our website traffic."</p>
-                <p><strong>- John Doe, CEO of Tech Innovations</strong></p>
-            </div>
-            <div class="testimonial-item">
-                <p>"The Google Ads campaigns managed by Your Company Name brought us an incredible return on investment. Highly recommended!"</p>
-                <p><strong>- Jane Smith, Founder of Creative Designs</strong></p>
+                <!-- Card 3: Content Marketing -->
+                <div class="bg-white rounded-xl p-8 card-shadow hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-[#38BDF8] mb-4"> <!-- Sky Blue for icon -->
+                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-[#1E293B] mb-3 text-center">Content Marketing</h3>
+                    <p class="text-gray-600 text-center">Create compelling content that attracts, engages, and converts your target audience.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="lead-capture" id="lead-capture-section">
-        <div class="container">
-            <h2>Ready to Grow Your Business?</h2>
-            <p>Let's discuss how we can help you achieve your digital marketing goals.</p>
-            <a href="contact.html" class="cta-button">Get Your Free Quote Now!</a>
+    <!-- Call to Action Section -->
+    <section class="bg-[#0F172A] text-white py-16 px-4 rounded-t-lg shadow-lg">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6">Ready to Transform Your Digital Presence?</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto opacity-90">
+                Let's discuss your goals and create a custom digital marketing strategy that delivers real results.
+            </p>
+            <a href="contact.html" class="btn-primary inline-block px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-105">
+                Get a Free Consultation
+            </a>
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <p>© 2025 Your Company Name. All rights reserved.</p>
+    <!-- Footer -->
+    <footer class="bg-[#0F172A] text-white py-8 px-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Digital Agency. All rights reserved.</p>
+            <div class="mt-4 space-x-4">
+                <a href="#" class="text-gray-300 hover:text-white transition duration-300">Privacy Policy</a>
+                <a href="#" class="text-gray-300 hover:text-white transition duration-300">Terms of Service</a>
+            </div>
         </div>
     </footer>
+
 </body>
 </html>
